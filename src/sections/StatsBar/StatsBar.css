@@ -1,0 +1,41 @@
+.stats-bar {
+  display: flex;
+  align-items: center;
+  padding: 32px 80px;
+  background: var(--dark);
+}
+
+.stats-bar__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.stats-bar__value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.stats-bar__value--blue  { color: var(--blue); }
+.stats-bar__value--red   { color: var(--red); }
+.stats-bar__value--green { color: var(--green); }
+.stats-bar__value--white { color: var(--white); }
+
+.stats-bar__label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--mid-gray);
+}
+
+.stats-bar__divider {
+  width: 2px;
+  height: 50px;
+  background: #333333;
+  flex-shrink: 0;
+}

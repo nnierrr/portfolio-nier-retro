@@ -1,0 +1,47 @@
+.btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  border: 3px solid var(--dark);
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn--primary {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--white);
+  background: var(--blue);
+  padding: 14px 32px;
+}
+
+.btn--primary:hover { opacity: 0.85; }
+
+.btn--secondary {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--dark);
+  background: var(--white);
+  padding: 14px 32px;
+}
+
+.btn--secondary:hover { background: var(--off-white); }
+
+.btn--cta-primary {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--blue);
+  background: var(--white);
+  padding: 16px 36px;
+}
+
+.btn--cta-primary:hover { opacity: 0.9; }
+
+.btn--cta-secondary {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--white);
+  background: var(--dark);
+  padding: 16px 36px;
+}
+
+.btn--cta-secondary:hover { opacity: 0.85; }

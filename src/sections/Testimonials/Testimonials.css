@@ -1,0 +1,41 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 64px 80px;
+  background: var(--dark);
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.testimonials__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: #1A1A1A;
+  border: 2px solid #333333;
+}
+
+.testimonials__stars {
+  font-size: 14px;
+}
+
+.testimonials__quote {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #CCCCCC;
+  line-height: 1.5;
+}
+
+.testimonials__author {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
