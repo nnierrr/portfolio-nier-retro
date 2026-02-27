@@ -21,7 +21,7 @@ export function Hero() {
 
       <div
         className="hero__avatar"
-        style={{ backgroundImage: 'url(/images/generated-1772196248973.png)' }}
+        style={{ backgroundImage: 'url(/generated-1772196248973.png)' }}
       >
         <span className="hero__avatar-label">LVL 99 ENGINEER</span>
       </div>

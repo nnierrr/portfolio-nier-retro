@@ -94,7 +94,7 @@ export const skillCategories: SkillCategory[] = [
 export const projects: Project[] = [
   {
     id: 'ride-hailing',
-    image: '/images/generated-1772196384306.png',
+    image: '/generated-1772196384306.png',
     tag: 'FLUTTER',
     tagColor: '#0066FF',
     title: 'Ride Hailing App',
@@ -104,7 +104,7 @@ export const projects: Project[] = [
   },
   {
     id: 'social-platform',
-    image: '/images/generated-1772196391122.png',
+    image: '/generated-1772196391122.png',
     tag: 'IONIC',
     tagColor: '#FF3300',
     title: 'Social Media Platform',
@@ -114,7 +114,7 @@ export const projects: Project[] = [
   },
   {
     id: 'delivery-logistics',
-    image: '/images/generated-1772196409421.png',
+    image: '/generated-1772196409421.png',
     tag: 'FLUTTER',
     tagColor: '#00AA55',
     title: 'Delivery & Logistics App',
