@@ -11,7 +11,7 @@ export function Projects() {
       <div className="projects__grid">
         {projects.map((proj) => (
           <div key={proj.id} className="projects__card">
-            <img src={proj.image} alt={proj.title} className="projects__img" />
+            <img src={import.meta.env.BASE_URL + proj.image} alt={proj.title} className="projects__img" />
             <div className="projects__body">
               <Badge color={proj.tagColor} size="sm">{proj.tag}</Badge>
               <h3 className="projects__title">{proj.title}</h3>
