@@ -39,3 +39,23 @@
   background: #333333;
   flex-shrink: 0;
 }
+
+@media (max-width: 768px) {
+  .stats-bar {
+    flex-wrap: wrap;
+    padding: 24px 20px;
+    gap: 24px;
+  }
+
+  .stats-bar__stat {
+    flex: 0 0 calc(50% - 12px);
+  }
+
+  .stats-bar__divider {
+    display: none;
+  }
+
+  .stats-bar__value {
+    font-size: 32px;
+  }
+}

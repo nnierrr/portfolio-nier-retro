@@ -38,3 +38,20 @@
   color: rgba(255, 255, 255, 0.67);
   letter-spacing: 0.5px;
 }
+
+@media (max-width: 768px) {
+  .cta {
+    padding: 48px 20px;
+    gap: 24px;
+  }
+
+  .cta__title {
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+
+  .cta__btns {
+    flex-direction: column;
+    width: 100%;
+  }
+}

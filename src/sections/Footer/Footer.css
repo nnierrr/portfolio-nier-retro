@@ -63,3 +63,17 @@
   color: #AAAAAA;
   letter-spacing: 1px;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 32px 20px;
+    text-align: center;
+  }
+
+  .footer__logo {
+    justify-content: center;
+  }
+}

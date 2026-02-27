@@ -60,3 +60,20 @@
   color: var(--mid-gray);
   letter-spacing: 1px;
 }
+
+@media (max-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 48px 20px;
+    gap: 28px;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}
