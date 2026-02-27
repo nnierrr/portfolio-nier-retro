@@ -1,0 +1,669 @@
+/* ===================== LAYOUT ===================== */
+.portfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================== HEADER ===================== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  height: 64px;
+  background: var(--white);
+  border-bottom: 3px solid var(--dark);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-bracket {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.logo-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  letter-spacing: -0.5px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav a {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--dark);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: var(--blue);
+}
+
+.hire-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 2px;
+  background: var(--blue);
+  border: 3px solid var(--dark);
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.hire-btn:hover {
+  opacity: 0.85;
+}
+
+/* ===================== HERO ===================== */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 80px;
+  background: var(--white);
+  border: 3px solid var(--dark);
+  border-top: none;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  flex: 1;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border: 2px solid var(--dark);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--white);
+  width: fit-content;
+}
+
+.badge-green { background: var(--green); }
+.badge-blue  { background: var(--blue); }
+.badge-red   { background: var(--red); }
+
+.hero-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -2px;
+  line-height: 0.95;
+}
+
+.hero-subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: -1px;
+}
+
+.hero-desc {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-gray);
+  line-height: 1.6;
+  max-width: 560px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--white);
+  background: var(--blue);
+  border: 3px solid var(--dark);
+  padding: 14px 32px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover { opacity: 0.85; }
+
+.btn-secondary {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--dark);
+  background: var(--white);
+  border: 3px solid var(--dark);
+  padding: 14px 32px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-secondary:hover { background: var(--off-white); }
+
+.hero-right {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  flex-shrink: 0;
+  border: 3px solid var(--dark);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.avatar-label {
+  position: absolute;
+  bottom: 0;
+  background: var(--dark);
+  padding: 6px 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+
+/* ===================== STATS BAR ===================== */
+.stats-bar {
+  display: flex;
+  align-items: center;
+  padding: 32px 80px;
+  background: var(--dark);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.stat-value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.stat-value.blue  { color: var(--blue); }
+.stat-value.red   { color: var(--red); }
+.stat-value.green { color: var(--green); }
+.stat-value.white { color: var(--white); }
+
+.stat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--mid-gray);
+}
+
+.stat-divider {
+  width: 2px;
+  height: 50px;
+  background: #333333;
+  flex-shrink: 0;
+}
+
+/* ===================== SECTION COMMON ===================== */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 64px 80px;
+  width: 100%;
+}
+
+.section-label-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-accent {
+  height: 3px;
+  width: 32px;
+  flex-shrink: 0;
+}
+
+.section-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--mid-gray);
+}
+
+.section-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  color: var(--dark);
+}
+
+/* ===================== EXPERIENCE ===================== */
+.experience {
+  background: var(--white);
+  border: 3px solid var(--dark);
+  border-top: none;
+}
+
+.exp-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exp-card {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: var(--off-white);
+  border: 2px solid var(--dark);
+}
+
+.exp-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.exp-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.exp-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border: 2px solid var(--dark);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--white);
+  width: fit-content;
+}
+
+.exp-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.exp-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -1px;
+}
+
+.exp-company {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.exp-desc {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+
+/* ===================== SKILLS ===================== */
+.skills {
+  background: var(--off-white);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.skill-cat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  background: var(--white);
+  border: 2px solid var(--dark);
+}
+
+.skill-cat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-dot {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+
+.skill-cat-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--dark);
+}
+
+.skill-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-tag {
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+  background: var(--light-gray);
+  border: 2px solid var(--border-light);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* ===================== PROJECTS ===================== */
+.projects {
+  background: var(--white);
+  border: 3px solid var(--dark);
+  border-top: none;
+}
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.proj-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 2px solid var(--dark);
+  overflow: hidden;
+}
+
+.proj-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.proj-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  flex: 1;
+}
+
+.proj-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border: 2px solid var(--dark);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--white);
+  width: fit-content;
+}
+
+.proj-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -0.5px;
+}
+
+.proj-desc {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+
+.proj-tech {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--mid-gray);
+  letter-spacing: 1px;
+}
+
+/* ===================== TESTIMONIALS ===================== */
+.testimonials {
+  background: var(--dark);
+}
+
+.testimonials .section-title {
+  color: var(--white);
+}
+
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.test-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: #1A1A1A;
+  border: 2px solid var(--border-mid);
+}
+
+.test-stars {
+  font-size: 14px;
+}
+
+.test-quote {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #CCCCCC;
+  line-height: 1.5;
+}
+
+.test-author {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* ===================== CTA ===================== */
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 80px;
+  background: var(--blue);
+  text-align: center;
+}
+
+.cta-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -2px;
+}
+
+.cta-desc {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.cta-btns {
+  display: flex;
+  gap: 16px;
+}
+
+.cta-btn-primary {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--blue);
+  background: var(--white);
+  border: 3px solid var(--dark);
+  padding: 16px 36px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.cta-btn-primary:hover { opacity: 0.9; }
+
+.cta-btn-secondary {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--white);
+  background: var(--dark);
+  border: 3px solid var(--dark);
+  padding: 16px 36px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.cta-btn-secondary:hover { opacity: 0.85; }
+
+.cta-email {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.67);
+  letter-spacing: 0.5px;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 80px;
+  background: var(--off-white);
+  border-top: 3px solid var(--dark);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-bracket {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.footer-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--dark);
+  letter-spacing: -0.5px;
+}
+
+.footer-center {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--mid-gray);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-links a {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--dark);
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--blue); }
+
+.footer-copyright {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  color: #AAAAAA;
+  letter-spacing: 1px;
+}
